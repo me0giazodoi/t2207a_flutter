@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:t2207a_flutter/screen/home/ui/category_item.dart';
+import 'package:t2207a_flutter/screen/home/ui/home_carousel.dart';
+import 'package:t2207a_flutter/screen/home/ui/home_category.dart';
 
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
@@ -7,7 +10,7 @@ class HomeScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("Home Screen"),
+        HomeCarousel(),
         Text("First section"),
         Text("Second section")
       ],
