@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:t2207a_flutter/screen/cart/cart_screen.dart';
 import 'package:t2207a_flutter/screen/home/home_screen.dart';
 import 'package:t2207a_flutter/screen/profile/search_screen.dart';
 import 'package:t2207a_flutter/screen/search/profile_screen.dart';
@@ -14,6 +15,7 @@ class _MyPageState extends State<MyPage>{
   final List<Widget> _screen =[
     const HomeScreen(),
     const SearchScreen(),
+    const CartScreen(),
     const ProfileScreen()
   ];
   int _selectedIndex = 0;
@@ -47,6 +49,7 @@ class _MyPageState extends State<MyPage>{
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_max_outlined),label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search_off_outlined),label: "Search"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart_outlined),label: "Cart"),
           BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined),label: "Profile"),
         ],
       ),
